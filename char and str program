@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+int main()
+{
+	char ch;
+	char str[10];
+	printf("Input:\n");
+	scanf("%c",&ch);
+	scanf("%s",str);
+	printf("Output:\n");
+	printf("%c\n",ch);
+	printf("%s",str);
+	return 0;
+}
