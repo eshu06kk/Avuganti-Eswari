@@ -1,0 +1,17 @@
+assignment3:- 
+*************program 1****************
+
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+	int a;
+	printf("enter the any number:\n");
+	scanf("%d",&a);
+	printf("Input:");
+    if(a>=0)
+    	printf("given number is positive");
+    else
+        printf("given number is negative");
+}
