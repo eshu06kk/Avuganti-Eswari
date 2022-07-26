@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int customer,income,tax;
+	char ch[100];
+	printf("enter the income :");
+	scanf("%d",&income);
+	if(income>=150000 && income<=300000)
+	{
+		tax=(income*10)/100;
+	}
+	if(income>=300000 && income<=500000)
+	{
+		tax=(income*15)/100;
+	}
+	if(income>500000)
+	{
+		tax=(income*20)/100;
+	}
+	if(income<150000)
+	{
+		tax=(income*0)/100;
+	}
+printf("customer name:\n");
+scanf("%d",customer);
+printf("income is %d\n",income);
+printf("*****************\n");
+printf("tax is %d\n",tax);
+}
