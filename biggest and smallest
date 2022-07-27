@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("enter two number:\n");
+	scanf("%d%d",&x,&y);
+	switch(x>y)
+	{
+		case 0: printf("y is big");
+			    break;
+		case 1: printf("x is big");
+			    break;
+	}
+}
