@@ -1,0 +1,53 @@
+result 1:-
+#include<stdio.h>
+int main()
+{
+	int x=10,y=20,z;
+	z=x++ + ++y;
+	printf("value of z is %d\n",z);
+}
+output:-
+value of z is 31
+************result 2**********
+#include<stdio.h>
+int main()
+{
+	int x=10,y=20,z;
+	z=++x + --y;
+	printf("value of z is %d\n",z);
+}
+output:-
+value of z is 30
+************result 3**********
+#include<stdio.h>
+int main()
+{
+	int x=10,y=20,z;
+	z=++x - y;
+	printf("value of z is %d\n",z);
+}
+output:-
+value of z is -9
+************result 4**********
+#include<stdio.h>
+int main()
+{
+    int x=10,y=20,z;
+	z=x-- + --y;
+	printf("value of z is %d\n",z);
+}
+output:-
+value of z is 29
+************result 5**********
+#include<stdio.h>
+int main()
+{
+    int x=10,y=20,z;
+	z=x-- + --y + x++ - y++;
+	printf("value of z is %d\n",z);
+}
+output:-
+value of z is 19
+
+
+
