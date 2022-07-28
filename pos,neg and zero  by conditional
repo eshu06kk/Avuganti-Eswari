@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int n,a;
+	printf("Intput 1:\n");
+	printf("enter a number:");
+	scanf("%d",&n);
+	printf("Output 1:\n");
+	(n>0)?printf("positive\n"):(n==0)?printf("zero\n"):printf("negative\n");
+	printf("Intput 2:\n");
+	printf("enter two number:");
+	scanf("%d",&a);
+	printf("output 2:\n");
+	(a>0)?printf("positive"):(a==0)?printf("zero"):printf("negative");
+	return 0;
+}
+Intput 1:
+enter a number:45
+Output 1:
+positive
+Intput 2:
+enter two number:-356
+output 2:
+negative
