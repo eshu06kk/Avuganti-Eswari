@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int n,x,y,r=0,value=0;
+	printf("enter number n:");
+	scanf("%d",&n);
+	printf("enter x and y values:");
+	scanf("%d %d",&x,&y);
+	while(n!=0)
+	{
+		r=n%10;
+		if(r==x)
+			r=y;
+		n=n/10;
+		value=value*10+r;
+	}
+	while(value!=0)
+	{
+		r=value%10;
+		value=value/10;
+		n=n*10+r;
+	}
+	printf("%d",n);
+}
