@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int sum=0,n,result,digit;
+    int product=1;
+    printf("enter any digit");
+    scanf("%d",digit);
+    while(n>0){
+    sum+=n%10;
+    product*=n%10;
+    n/=10;
+    result=product-sum;
+    printf("%d",result);
+	}
+    return 0;
+
+}
