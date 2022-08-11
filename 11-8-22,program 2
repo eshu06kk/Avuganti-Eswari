@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+        if(n<0) return -1;
+        if(n==0) return 0;
+        int rows = 0;
+        long sum = 0;
+        while(sum<=n){
+            sum += rows+1;
+            rows++;
+        }
+        return rows-1;
+    }
+
+int main(void)
+{
+  int n = 5;
+  printf("Input number %d ",n);
+  printf("\nTotal number of full staircase rows are %d ",check_stair_case(n));
+  n = 8;
+  printf("\nInput number %d ",n);
+  printf("\nTotal number of full staircase rows are %d ",check_stair_case(n));
+  return 0;    
+}
