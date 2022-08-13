@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	char ch='A';
+	char st='a';
+	for(i=0;i<=5;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("%c%c",ch,st);
+			ch++;
+			st++;
+			printf(" ");
+		}
+		printf("\n");
+	}
+}
