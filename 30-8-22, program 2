@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char s[100];
+	int i,a;
+	gets(s);
+	s[i]='a';
+	if(s[i]=='a')
+		printf("%c is %c\n",s[i],toupper(s[i]));
+	if(s[i]!='0' || s[i]=='6')
+		printf("AdityA\n");
+	return 0;
+}
