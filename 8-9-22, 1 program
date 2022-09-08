@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    scanf("%d\n %d",&a,&b);
+    int *p,*q;
+    p=&a;
+    q=&b;
+    printf("%d\n", *p+*q);
+    if(a>b)
+        printf("%d",*p-*q);
+    else
+        printf("%d",*q-*p);
+    return 0;
+}
