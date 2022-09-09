@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct Node{
+    int data;
+    struct Node *next;
+};
+
+void insertEnd(struct Node** head, int data){
+    struct Node* newNode = (struct Node*) malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->next = NULL;
+
+    if(*head == NULL){
+        *head = newNode;
+        return;
+    }
+    struct Node* temp = *head;
+    
+    while(temp->next!=NULL)
+        temp = temp->next;
+    
+    temp->next = newNode;
+    
+    printf("%d inserted at the end\n", data);
+}
+
+
+void display(struct Node* node){
+
+    while(node!=NULL){
+        printf("%d ",node->data);
+        node = node->next;
+    }
+    printf("\n");
+}
+
+int main()
+{
+    struct Node* head = NULL; 
+    struct Node* node2 = NULL; 
+    struct Node* node3 = NULL; 
+    struct Node* node4 = NULL;
+
+    head =  (struct Node*)malloc(sizeof(struct Node)); 
+    node2 = (struct Node*)malloc(sizeof(struct Node)); 
+    node3 = (struct Node*)malloc(sizeof(struct Node)); 
+    node4 = (struct Node*)malloc(sizeof(struct Node));
+   
+    head->data  = 22;  
+    head->next  = node2; 
+
+    node2->data = 30; 
+    node2->next = node3; 
+
+    node3->data = 24;
+    node3->next = node4; 
+
+    node4->data = 20;
+    node4->next = NULL;
+
+    
+    printf("Linked List Before Operations : "); 
+    display(head);
+    
+    insertEnd(&head,5);
+    insertEnd(&head,6);
+    insertEnd(&head,7);
+    insertEnd(&head,8);
+
+    printf("Linked List After Operations : ");
+    display(head);
+
+    return 0; 
+}
