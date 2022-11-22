@@ -1,0 +1,9 @@
+p=int(input("principalamount:"))
+t=int(input("time peroid:"))
+r=float(input("rate of interest:"))
+si=(p*t*r)/100
+print("simple interest:",si)
+hello=si+p
+time=t*12
+emi=hello/time
+print('emi:',emi)
