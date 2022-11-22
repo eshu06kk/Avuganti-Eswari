@@ -1,0 +1,9 @@
+# to generate student details
+sno=int(input("enter studetnt no:"))
+name=input("enter student name:")
+group=input("enter group:")
+gender=input("enter gender:")
+phone=int(input("enter phone number:"))
+address=input("enter address:")
+degree_percentage=int(input("enter degree percentage:"))
+
